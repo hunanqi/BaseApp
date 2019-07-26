@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyLibrary</string>
+
+
+    //emptyView
+    <string name="empty_net_error">网络不稳定 请刷新重试</string>
+    <string name="empty_net_refresh">重新刷新</string>
+    <string name="empty_no_data">暂时没有数据哦</string>
+    <string name="network_error">网络不给力哦~</string>
+
+
+</resources>
