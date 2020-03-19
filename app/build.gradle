@@ -52,19 +52,6 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation project(path: ':mylibrary')
-    //版本依赖冲突
-    configurations.all {
-        resolutionStrategy.eachDependency {
-            DependencyResolveDetails details ->
-                def requested = details.requested
-                if (requested.group == 'com.android.support') {
-                    if (!requested.name.startsWith("multidex")) {
-                        details.useVersion rootProject.ext.ANDROID_SUPPORT_VERSION
-                    }
-                }
-        }
-    }
-
     implementation 'com.jakewharton:butterknife:10.1.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
 }

@@ -26,13 +26,9 @@ android {
 dependencies {
 
     api fileTree(dir: 'libs', include: ['*.jar'])
-
+    api 'androidx.appcompat:appcompat:1.0.2'
+    api 'androidx.recyclerview:recyclerview:1.0.0'
     // Android Support
-    api "com.android.support:appcompat-v7:${rootProject.ext.ANDROID_SUPPORT_VERSION}"
-    api "com.android.support:recyclerview-v7:${rootProject.ext.ANDROID_SUPPORT_VERSION}"
-    api "com.android.support:cardview-v7:${rootProject.ext.ANDROID_SUPPORT_VERSION}"
-    api "com.android.support:design:${rootProject.ext.ANDROID_SUPPORT_VERSION}"
-    api "com.android.support:percent:${rootProject.ext.ANDROID_SUPPORT_VERSION}"
     api 'com.android.support:multidex:1.0.1'
     api 'com.android.support.constraint:constraint-layout:2.0.0-alpha2'
 
